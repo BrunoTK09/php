@@ -1,0 +1,26 @@
+body {
+  background: linear-gradient(45deg, black, purple, white);
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  margin: auto;
+  
+}
+
+form {
+  background: #dedede;
+  margin: 10px;
+  padding: 3em;
+  height: 320px;
+  border-radius: 20px;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+  backdrop-filter: blur(10px);
+  box-shadow: 20px 20px 40px -6px rgba(255, 255, 255, 0.209);
+  text-align: center;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+
+fieldset{
+  border-radius: 20px;
+}
