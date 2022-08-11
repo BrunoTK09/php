@@ -18,13 +18,16 @@
    <label for="descricao">Descrição:</label><br>
    <input type="text" name="descricao" placeholder="Tipo Produto"><br>
    <label for="dtval">Validade:</label><br>
-   <input type="text" name="dtval" placeholder="##/##/####"><br>
+   <input type="text" name="dtval" placeholder="## / ## / ####"><br>
    <label for="qtdat">Quantidade:</label><br>
    <input type="text" name="qtdat" placeholder="#####"><br>
    <label for="valor">Valor:</label><br>
    <input type="text" name="valor" placeholder="$0,00"><br><br>
    <input type="submit" name="cadastrar" value="Cadastrar"><br><br>
-   <button ><a type="button" href="alterar.php" target="_self">Alterar</a></button><br><br>
+        <button ><a type="button" href="quantidade.php" target="_self">Alterar</a></button><br>
+        <button ><a type="button" href="preco.php" target="_self">Preço</a></button><br>
+        <button ><a type="button" href="validade.php" target="_self">Validade</a></button><br>
+        <button ><a type="button" href="excluir.php" target="_self">Excluir</a></button><br>
 
 </fieldset>
 </form></center>
@@ -42,9 +45,9 @@ echo "$datasys";
 
 $conn = mysqli_Connect("localhost", "root", "", "3tid");
 
-if (!$conn) {
-  die('Erro ao conectar ao banco: ' . mysql_error());
-}
+// if (!$conn) {
+//   die('Erro ao conectar ao banco: ' . mysql_error());
+// }
 
 if(isset($_POST["cadastrar"])){
   $idcode     = $_POST["idcode"];
